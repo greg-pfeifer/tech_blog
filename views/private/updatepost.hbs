@@ -1,0 +1,26 @@
+    <div class="new-listing">
+    <form id="edit-post-form" class="new-post">
+        <h2>Update Post</h2>
+        <label for="title">Title</label>
+        <input type="hidden" name="post-id" value="{{postData.id}}">
+        <input 
+        id="title"
+        type="text"
+        name="title"
+        placeholder="Enter title here"
+        />
+
+        <label for="content">Content</label>
+        <input 
+        class="input-content"
+        id="content"
+        type="text"
+        name="content"
+        />
+        <button
+        type="submit"
+        >Update Post</button>
+    </form>
+    </div>
+
+    <script src="/edit.js"></script>

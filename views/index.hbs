@@ -1,0 +1,45 @@
+<article>
+    {{#each data as |data|}}
+
+    <div class="post-body">
+        <p class="post-title">{{data.title}}</p>
+        <p class="post-author">Posted by Greg on {{data.createdAt}}</p>
+        <p class="post-content">{{data.content}}</p>
+
+    </div>
+
+    <div class="comment-body">
+        {{#each data.comments}}
+        <h2 class="comment-text">"{{new_comment}}"</h2>
+        <h2 class="comment-author">Comment posted by User on {{data.createdAt}}</h2>
+        {{/each}}
+    </div>
+
+    <div class="action-buttons">
+        <div class="button-padding">
+            <a href="/newcomment">
+                <button class="add-comment">Add Comment</button>
+            </a>
+        </div>
+
+        <div class="button-padding">
+            <a href="/updatepost/1">
+                <button class="add-comment">Update Post</button>
+            </a>
+        </div>
+
+        <div class="button-padding">
+            <a href="/deletepost/1">
+                <button class="add-comment">Delete Post</button>
+            </a>
+        </div>
+    </div>
+
+
+    {{/each}}
+
+
+
+
+
+</article>
