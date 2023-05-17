@@ -10,7 +10,8 @@ This application is a tech-oriented blog where users can create and update posts
   
 ## Usage
 
-Screenshots of deployed application
+
+Screenshot of deployed application
 
 ![Deployed application screenshot](images/screenshot.png)
 
